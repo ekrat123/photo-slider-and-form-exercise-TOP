@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+label {
+  display: inline-block;
+  padding: 0.5rem;
+  width: 30%;
+}
+
+label::after {
+  content: ":";
+}
+
+input {
+  padding: 0.25rem;
+  font-size: 0.875rem;
+  width: 50%;
+}
+
+button {
+  padding: 0.5rem;
+  width: 70%;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: rgba(10, 10, 187, 0.646);
+  margin: 0.5rem auto;
+  display: block;
+  font-weight: 500;
+}
+header {
+  text-align: center;
+}
+
+form {
+  width: 70vw;
+  margin: 1rem auto;
+}
+
+input:invalid {
+  border: 1px dashed red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+.error {
+  display: block;
+  margin-left: 30%;
+  color: red;
+  font-style: italic;
+  padding: 0.25rem;
+  height: 1rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Form</h1></header>
+    <form action="" data-form novalidate>
+      <fieldset>
+        <label for="email">Email</label
+        ><input required id="email" type="email" data-email /><small
+          class="error"
+          data-error
+        ></small>
+      </fieldset>
+      <fieldset>
+        <label for="country">Country</label
+        ><input required id="country" type="text" data-country /><small
+          class="error"
+          data-error
+        ></small>
+      </fieldset>
+      <fieldset>
+        <label for="zip">Zip Code</label>
+        <input required id="zip" type="text" data-zip pattern=".{3,}" /><small
+          class="error"
+          data-error
+        ></small>
+      </fieldset>
+      <fieldset>
+        <label for="password">PassWord</label
+        ><input
+          required
+          id="password"
+          type="password"
+          data-password
+          pattern=".{6,}"
+        /><small class="error" data-error></small>
+      </fieldset>
+      <fieldset>
+        <label for="passwordConfirm">Password Confirm</label
+        ><input
+          required
+          id="passwordConfirm"
+          type="password"
+          pattern=".{6,}"
+          data-password-confirm
+        /><small class="error" data-error></small>
+      </fieldset>
+      <button type="submit" data-button>Submit</button>
+    </form>
+  </body>
+</html>
